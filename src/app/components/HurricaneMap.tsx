@@ -9,7 +9,7 @@ import icon from '../assets/airplane.png'
 // Define a custom icon for the marker
 const hurricaneIcon = new L.Icon({
   iconUrl: icon.src, // Replace this with the actual path to your icon image
-  iconSize: [32, 32], // Adjust the size of the icon as needed
+  iconSize: [20, 20], // Adjust the size of the icon as needed
   iconAnchor: [16, 32], // Anchor the icon appropriately
   popupAnchor: [0, -32], // Position of the popup relative to the icon
 });
