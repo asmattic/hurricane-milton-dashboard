@@ -67,7 +67,7 @@ export default function HurricaneMap() {
   if (error) return <div>Error loading data</div>;
 
   return (
-    <MapContainer center={new L.LatLng(24.2333, -92.7)} zoom={5} style={{ height: '800px', width: '100%' }}>
+    <MapContainer center={new L.LatLng(27, -82.7)} zoom={7} className="flex flex-col items-center justify-items-center flex-grow" style={{ minWidth: '800px', minHeight: '800px' }}>
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {data.objects.map((hurricanePoint: HurricanePoint, index: number) => (
         <Marker key={index} position={[hurricanePoint.coordinates[0], hurricanePoint.coordinates[1]]} icon={hurricaneIcon}>
