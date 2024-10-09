@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
+import hurricaneData from '../../../data/hurricane_data.json'
 
 export async function GET() {
-  const hurricaneData = [
+  /*const hurricaneData = [
     {
       latitude: 24.2333,
       longitude: -92.7,
@@ -1199,6 +1200,6 @@ export async function GET() {
       }
     }
 
-  ] as const;
+  ] as const;*/
   return NextResponse.json(hurricaneData);
 }
